@@ -80,7 +80,7 @@ fun UnitConverter(){
     fun convertUnits(){
         // ?: - elvis operator
         val inputValueDouble = inputValue.toDoubleOrNull() ?: 0.0
-        val result = (inputValueDouble * conversionFactor.value * 100.0/oConversionFactor.value).roundToInt() / 100
+        val result = (inputValueDouble * conversionFactor.value * 100.0/oConversionFactor.value) / 100
         outputValue = result.toString()
     }
 
